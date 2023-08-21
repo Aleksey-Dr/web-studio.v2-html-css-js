@@ -571,7 +571,7 @@ button {
 
     fill: var(--primary-blue-color);
 
-    transition: fill var(--timing-function);
+    transition: fill 250ms var(--timing-function);
 }
 
 .modal-form-input:focus + .modal-form-icon {
@@ -620,22 +620,11 @@ button {
     margin-bottom: 24px;
 }
 
-/* .modal-form-checkbox {
-    position: absolute;
-    appearance: none;
-} */
-
-.modal-form-checkbox-icon {
-    margin-right: 8px;
-
-    cursor: pointer;
-}
-
 .modal-form-span-checkbox:focus + .modal-form-checkbox-icon {
     border-color: var(--primary-brand-color);
 }
 
-.modal-form-span-checkbox:checked + .modal-form-checkbox-icon {
+.modal-form-input-checkbox:checked + .modal-form-checkbox-label .modal-form-span-checkbox {
     background-color: var(--primary-brand-color);
     border: none;
 
@@ -664,12 +653,14 @@ button {
     width: 16px;
     height: 16px;
 
-    border: 1px solid var(--primary-blue-color, rgba(46, 47, 66, 0.40));
+    cursor: pointer;
+
+    border: 1px solid rgba(46, 47, 66, 0.40);
     border-radius: 2px;
 
     fill: transparent;
 
-    transition: border-color 250ms var(--timing-function),
+    transition: background-color 250ms var(--timing-function),
         border 250ms var(--timing-function),
         fill 250ms var(--timing-function);
 }
