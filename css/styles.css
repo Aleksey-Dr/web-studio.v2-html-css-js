@@ -620,15 +620,11 @@ button {
     margin-bottom: 24px;
 }
 
-.modal-form-span-checkbox:focus + .modal-form-checkbox-icon {
-    border-color: var(--primary-brand-color);
-}
-
 .modal-form-input-checkbox:checked + .modal-form-checkbox-label .modal-form-span-checkbox {
-    background-color: var(--primary-brand-color);
+    background-color: var(--pressed-state-color);
     border: none;
 
-    fill: var(--modal-background-color);
+    fill: var(--text-light-color);
 }
 
 .modal-form-checkbox-label {
