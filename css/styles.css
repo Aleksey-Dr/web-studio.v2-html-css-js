@@ -393,7 +393,7 @@ button {
     fill: var(--text-light-color);
 }
 
-.footer-form-label {
+.footer-form-description {
     display: block;
     margin-bottom: 16px;
 
@@ -404,19 +404,26 @@ button {
     color: var(--white-background-color);
 }
 
+.footer-form {
+    display: flex;
+    gap: 24px;
+}
+
 .footer-form-input {
     width: 264px;
     height: 40px;
     flex-shrink: 0;
-    padding: 8px 16px;
-    margin-right: 24px;
+    padding-left: 16px;
 
-    background-color: var(--primary-blue-color);
+    background-color: transparent;;
 
     border-radius: 4px;
     border: 1px solid var(--white-background-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
+    font-size: var(--form-label-font-size);
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     color: var(--white-background-color);
 }
 
@@ -428,9 +435,10 @@ button {
 }
 
 .footer-form-btn {
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 164px;
+    min-width: 165px;
     height: 40px;
     padding: 8px 24px;
 
@@ -440,7 +448,6 @@ button {
     border-radius: 4px;
     background-color: var(--primary-brand-color);
     
-    text-align: center;
     font-weight: var(--medium-font-weight);
     line-height: 1.5;
     letter-spacing: 0.04em;

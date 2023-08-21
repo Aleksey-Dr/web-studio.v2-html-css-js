@@ -519,14 +519,17 @@
             </li>
           </ul>
         </div>
-        <div>
-          <form>
-            <label class="footer-form-label" for="subscribe">Subscribe</label>
+        <div class="footer-block-subscribe">
+          <p class="footer-form-description">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-form-label">
             <input
               class="footer-form-input"
               type="email"
+              name="user_subscribe_email"
               placeholder="E-mail"
-              id="subscribe">
+            >
+            </label>
             <button class="footer-form-btn" type="submit">
               Subscribe
               <svg
@@ -613,11 +616,11 @@
             id="comment"
             ></textarea>
           <label
-            class="modal-form-checkbox-label"
-            name="user_accept_policy">
+            class="modal-form-checkbox-label">
             <input
               class="modal-form-checkbox"
               type="checkbox"
+              name="user_accept_policy"
               required>
             <svg
               class="modal-form-checkbox-icon"
