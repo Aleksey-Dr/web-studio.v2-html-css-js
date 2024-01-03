@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Website WebStudio company" />
     <title>Studio</title>
     <link
@@ -14,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
@@ -22,30 +23,40 @@
     <header class="header-page">
       <div class="header-container container">
         <nav class="navigation">
-          <a href="./index.html" class="logo link"
+          <a class="logo link" href="./index.html"
             >Web<span class="logo-dark">Studio</span></a
           >
           <ul class="menu list">
-            <li class="">
-              <a href="./index.html" class="current menu-link link">Studio</a>
+            <li>
+              <a class="current menu-link link" href="./index.html">Studio</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="menu-link link">Portfolio</a>
+              <a class="menu-link link" href="./portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a href="" class="menu-link link">Contacts</a>
+              <a class="menu-link link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
+        <button
+          class="burger-menu-btn js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-burger-menu-btn" width="32" height="32">
+            <use href="./images/icons.svg#icon-burger-menu-btn"></use>
+          </svg>
+        </button>
         <address class="contacts">
           <ul class="contacts-list list">
             <li>
-              <a href="mailto:info@devstudio.com" class="contacts-item link"
+              <a class="contacts-item link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a href="tel:+110001111111" class="contacts-item link"
+              <a class="contacts-item link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -53,6 +64,7 @@
         </address>
       </div>
     </header>
+    <!-- /HEADER -->
 
     <main>
       <!-- HERO -->
@@ -66,9 +78,10 @@
           </button>
         </div>
       </section>
+      <!-- /HERO -->
 
       <!-- ABOUT US -->
-      <section class="studio-about">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">About us</h2>
           <ul class="studio-about-list list">
@@ -123,6 +136,7 @@
           </ul>
         </div>
       </section>
+      <!-- /ABOUT US -->
 
       <!-- WE DOING -->
       <section class="studio-doing">
@@ -131,6 +145,8 @@
           <ul class="studio-doing-list list">
             <li class="studio-doing-item">
               <img
+                srcset="./images/monitor.jpg 1x,
+                  ./images/monitor@2x.jpg 2x"
                 src="./images/monitor.jpg"
                 alt="Diagrams in a monitor"
                 width="360"
@@ -139,6 +155,8 @@
             </li>
             <li class="studio-doing-item">
               <img
+                srcset="./images/phone-dispay.jpg 1x,
+                  ./images/phone-dispay@2x.jpg 2x"
                 src="./images/phone-dispay.jpg"
                 alt="Pages of messenger on displays of phone"
                 width="360"
@@ -147,6 +165,8 @@
             </li>
             <li class="studio-doing-item">
               <img
+                srcset="./images/web-design.jpg 1x,
+                  ./images/web-design@2x.jpg 2x"
                 src="./images/web-design.jpg"
                 alt="Opened an app on a display of phone"
                 width="360"
@@ -156,6 +176,7 @@
           </ul>
         </div>
       </section>
+      <!-- /WE DOING -->
 
       <!-- OUR TEAM -->
       <section class="studio-team section">
@@ -164,6 +185,8 @@
           <ul class="studio-team-list list">
             <li class="studio-team-card">
               <img
+                srcset="./images/mark-guerrero.jpg 1x,
+                  ./images/mark-guerrero@2x.jpg 2x"
                 src="./images/mark-guerrero.jpg"
                 alt="Mark&#10076;s photo"
                 width="264"
@@ -206,6 +229,8 @@
             </li>
             <li class="studio-team-card">
               <img
+                srcset="./images/tom-ford.jpg 1x,
+                  ./images/tom-ford@2x.jpg 2x"
                 src="./images/tom-ford.jpg"
                 alt="Tom&#10076;s photo"
                 width="264"
@@ -248,6 +273,8 @@
             </li>
             <li class="studio-team-card">
               <img
+                srcset="./images/camila-garcia.jpg 1x,
+                  ./images/camila-garcia@2x.jpg 2x"
                 src="./images/camila-garcia.jpg"
                 alt="Camila&#10076;s photo"
                 width="264"
@@ -290,6 +317,8 @@
             </li>
             <li class="studio-team-card">
               <img
+                srcset="./images/daniel-wilson.jpg 1x,
+                  ./images/daniel-wilson@2x.jpg 2x"
                 src="./images/daniel-wilson.jpg"
                 alt="Daniel&#10076;s photo"
                 width="264"
@@ -333,6 +362,7 @@
           </ul>
         </div>
       </section>
+      <!-- /OUR TEAM -->
 
       <!-- CLIENTS -->
       <section class="section">
@@ -384,6 +414,7 @@
           </ul>
         </div>
       </section>
+      <!-- /CLIENTS -->
     </main>
 
     <!-- FOOTER -->
@@ -454,11 +485,84 @@
     </footer>
     <!-- /FOOTER -->
 
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="close-btn js-close-menu" type="button">
+          <svg class="icon-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu-content">
+          <nav class="navigation">
+            <ul class="mobile-menu-navigation list">
+              <li>
+                <a class="current menu-link link" href="./index.html">Studio</a>
+              </li>
+              <li>
+                <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+              </li>
+              <li>
+                <a class="menu-link link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-contacts">
+            <ul class="contacts-list list">
+              <li>
+                <a
+                  class="contacts-item email link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="contacts-item tel link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="studio-socials-list list">
+            <li class="social-item">
+              <a href="" class="link">
+                <svg width="24" height="24" class="studio-social-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="link">
+                <svg width="24" height="24" class="studio-social-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="link">
+                <svg width="24" height="24" class="studio-social-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="" class="link">
+                <svg width="24" height="24" class="studio-social-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /MOBILE MENU -->
+
     <!-- MODAL WINDOW -->
     <div class="modal-backdrop is-hidden" data-modal>
       <div class="modal-window">
-        <button class="modal-btn-close" type="button" data-modal-close>
-          <svg width="8" height="8" class="icon-close">
+        <button class="close-btn" type="button" data-modal-close>
+          <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
@@ -542,7 +646,7 @@
               <!-- &nbsp; - space character -->
               I accept the terms and conditions of the&nbsp;
               <a class="link" href="">Privacy Policy</a>
-          </label>
+            </label>
           </div>
           <button class="studio-hero-btn" type="submit">Send</button>
         </form>
@@ -552,5 +656,12 @@
 
     <!-- SCRIPT -->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -102,10 +102,6 @@ button {
     padding-bottom: 120px;
 }
 
-.page-header {
-    border-bottom: 1px solid var(--secondary-white-color);
-}
-
 .logo {
     margin-right: 76px;
 
