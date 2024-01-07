@@ -3,7 +3,7 @@
 body {
     background-color: var(--white-background-color);
     font-family: var(--primary-font-family);
-    color: var(--text-description-color)
+    color: var(--text-description-color);
 }
 
 h1,
@@ -58,4 +58,4 @@ button {
     list-style: none;
 }
 
-/* ================== /OMMON ================== */
+/* ================== /COMMON ================== */

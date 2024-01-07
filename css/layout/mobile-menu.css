@@ -1,4 +1,4 @@
-/* MOBILE MENU */
+/* ================== MOBILE MENU ================== */
 .mobile-menu {
     position: fixed;
     display: flex;
@@ -46,3 +46,4 @@
   margin-top: auto;
   margin-bottom: 48px;
 }
+/* ================== /MOBILE MENU ================== */

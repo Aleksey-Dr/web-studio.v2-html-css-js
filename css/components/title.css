@@ -1,3 +1,4 @@
+/* ================== TITLE ================== */
 .title {
         margin-bottom: 72px;
 
@@ -57,3 +58,4 @@
     letter-spacing: 0.025em;
     color: var(--primary-blue-color);
 }
+/* ================== /TITLE ================== */

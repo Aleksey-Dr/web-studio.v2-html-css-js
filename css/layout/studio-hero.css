@@ -1,4 +1,4 @@
-/* STUDIO HERO */
+/* ================== STUDIO HERO ================== */
 /* Mobile */
 @media screen and (max-width: 767px) {
 
@@ -156,10 +156,11 @@
     screen and (min-resolution: 2dppx) and (min-width: 1158px),
     screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
 
-        .studio-hero {
-            background-image: linear-gradient(
-            rgba(46, 47, 66, 0.70),
-            rgba(46, 47, 66, 0.70)),
-            url("../../images/people-office@2x.jpg");
-        }
+    .studio-hero {
+        background-image: linear-gradient(
+        rgba(46, 47, 66, 0.70),
+        rgba(46, 47, 66, 0.70)),
+        url("../../images/people-office@2x.jpg");
+    }
 }
+/* ================== /STUDIO HERO ================== */

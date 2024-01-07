@@ -1,3 +1,4 @@
+/* ================== VARIABLES ================== */
 :root {
     /* COLORS */
     --primary-brand-color: #4D5AE5;
@@ -28,3 +29,4 @@
     /* TIMING */
     --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* ================== /VARIABLES ================== */
